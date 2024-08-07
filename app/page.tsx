@@ -1,113 +1,109 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
+import Navbar from "./components/Navbar";
+import image from "@/public/image.jpg";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <section className="flex h-[100%] bg-[white]   flex-col items-center justify-between">
+      <Navbar />
+
+      <div className=" text-start w-[100%]  flex justify-center px-[4rem]  mb-[1.5rem]  ">
+        <h1 className="text-[2.5rem] text-start ] flex justify-center leading-[3rem] w-[80%] font-semibold ">
+          Why Every Organization Needs Database Activity Monitoring
+        </h1>
+      </div>
+
+      <Image src={image} alt="data-image" height={100} width={200} />
+
+      <div className="font-sans m-5 px-[4rem] gap-[2.5rem] flex flex-col leading-relaxed">
+        <div className="mb-5">
+          <p className="mb-2">
+            Databases have become more important than ever, thanks to their
+            usage for information storage, their ability to power critical
+            applications, and their relevance in decision-making. However,
+            managing them can be difficult, especially in large organizations
+            that work with enormous amounts of data. Thus, there is a need to
+            employ database activity monitoring systems that provide users with
+            real-time information on the condition of their data. In this
+            article, we shall explain why these systems are necessary.
+          </p>
+        </div>
+        <div className="mb-5">
+          <div className="text-xl font-bold mb-2">
+            The Risks of Unmonitored Database Activity
+          </div>
+          <p className="mb-2">
+            Unmonitored database activity is a recipe for disaster. Without
+            visibility into who's accessing your data, when, and why, you're
+            leaving your business vulnerable to insider threats, cyber-attacks,
+            and data breaches.
+          </p>
+          <p className="mb-2">
+            You are also left in the dark regarding the state of integrations
+            and other tools that are tied to your database such as e-commerce
+            updates, user sign-ups, landing pages, etc. The consequences of the
+            above can be devastating as compromised customer data, intellectual
+            property theft, and reputational damage can take years to recover
+            from.
+          </p>
+        </div>
+        <div className="mb-5">
+          <div className="text-xl font-bold mb-2">
+            The Benefits of Database Activity Monitoring
+          </div>
+          <p className="mb-2">
+            So, what can database activity monitoring do for your business? For
+            starters, it provides a clear view of all database activity,
+            allowing you to:
+          </p>
+          <ul className="list-disc ml-5 mb-2">
+            <li className="mb-1">
+              Identify suspicious behavior and investigate potential security
+              threats
+            </li>
+            <li className="mb-1">
+              Meet regulatory compliance requirements and pass audits with
+              confidence
+            </li>
+            <li className="mb-1">
+              Optimize database performance and improve data-driven
+              decision-making
+            </li>
+            <li className="mb-1">
+              Reduce the risk of data breaches and cyber attacks
+            </li>
+          </ul>
+          <p className="mb-2">
+            Take, for example, a financial institution that uses database
+            activity monitoring to detect and log user/employee logins. By
+            monitoring database activity, they can identify unusual patterns of
+            behavior, such as an employee accessing sensitive customer data
+            outside of work hours or a user having difficulty with the sign-up
+            process. This allows them to take swift action to prevent a
+            potential data breach or customer loss.
+          </p>
+        </div>
+        <div className="mb-5">
+          <div className="text-xl font-bold mb-2">
+            Getting Started with Database Activity Monitoring
+          </div>
+          <p className="mb-2">
+            Database activity monitoring is a necessity for businesses that want
+            to protect their data and receive regular notifications on their
+            database activity. By implementing a robust monitoring solution such
+            as Telex, you can gain visibility into database activity, reduce
+            risk, and stay ahead of threats and errors. With the Telex software,
+            you can define procedures for database access and activity
+            monitoring, create channels, and enable notifications. Try Telex
+            today for a notified tomorrow!
+          </p>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+<Footer/>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </section>
   );
 }
