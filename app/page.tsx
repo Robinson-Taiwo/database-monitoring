@@ -6,22 +6,21 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <section className="flex h-[100%] bg-[white]   flex-col items-center justify-between">
+    <section className="flex h-[100%] bg-[white] flex-col   flex-col items-center justify-between">
       <Navbar />
 
-      <div className=" text-start w-[100%]  flex justify-center xl:px-[8rem]  px-[1.5rem] lg:px-[4rem] mt-[4rem]   mb-[1.5rem]  ">
-        <h1 className="text-[2.2rem] text-start  flex justify-center leading-[3rem] w-[80%] font-semibold ">
+      <div className=" text-start  flex justify-center w-[80%] lg:w-[50rem] mt-[4rem]   mb-[1.5rem]  ">
+        <h1 className="text-[2.2rem] text-start  flex justify-center leading-[3rem] w-[100%] font-semibold ">
           Why Every Organization Needs Database Activity Monitoring
         </h1>
       </div>
 
-
-      <div className="font-sans m-5 lg:px-[9rem] xl:px-[12rem] gap-[2.5rem] flex flex-col leading-relaxed">
-
-
-      <Image src={image} alt="data-image" className="w-[100%] lg:h-[20rem] xl:h-[30rem]   " />
-
-
+      <div className="font-sans m-5 lg:w-[50rem] w-[80%] gap-[2.5rem] flex flex-col leading-relaxed">
+        <Image
+          src={image}
+          alt="data-image"
+          className="w-[100%] lg:h-[20rem] xl:h-[30rem]   "
+        />
 
         <div className="mb-5">
           <p className="mb-2">
@@ -107,8 +106,7 @@ export default function Home() {
         </div>
       </div>
 
-<Footer/>
-
+      <Footer />
     </section>
   );
 }
