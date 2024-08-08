@@ -10,12 +10,12 @@ export default function Home() {
       <Navbar />
 
       <div className=" text-start  flex justify-center w-[80%] lg:w-[50rem] mt-[4rem]   mb-[1.5rem]  ">
-        <h1 className="text-[2.2rem] text-start  flex justify-center leading-[3rem] w-[100%] font-semibold ">
+        <h1 className="text-[2.2rem] text-start  flex justify-center leading-[4rem] w-[100%] font-semibold ">
           Why Every Organization Needs Database Activity Monitoring
         </h1>
       </div>
 
-      <div className="font-sans m-5 lg:w-[50rem] w-[80%] gap-[2.5rem] flex flex-col leading-relaxed">
+      <div className="font-sans m-5 lg:w-[43rem] w-[80%] gap-[2.5rem] flex flex-col leading-relaxed">
         <Image
           src={image}
           alt="data-image"
@@ -23,17 +23,21 @@ export default function Home() {
         />
 
         <div className="mb-5">
-          <p className="mb-2">
+          <p className="mb-[0rem">
             Databases have become more important than ever, thanks to their
             usage for information storage, their ability to power critical
             applications, and their relevance in decision-making. However,
             managing them can be difficult, especially in large organizations
-            that work with enormous amounts of data. Thus, there is a need to
-            employ database activity monitoring systems that provide users with
-            real-time information on the condition of their data. In this
-            article, we shall explain why these systems are necessary.
+            that work with enormous amounts of data.
+          </p>
+          <p className="mb-2">
+            Thus, there is a need to employ database activity monitoring systems
+            that provide users with real-time information on the condition of
+            their data. In this article, we shall explain why these systems are
+            necessary.
           </p>
         </div>
+
         <div className="mb-5">
           <div className="text-xl font-bold mb-2">
             The Risks of Unmonitored Database Activity

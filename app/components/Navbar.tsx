@@ -1,27 +1,29 @@
-import React from 'react'
+import React from "react";
 
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
-    <div className="flex-1">
-      <a className="btn btn-ghost text-xl">daisyUI</a>
-    </div>
-    <div className="flex-none">
-      <ul className="menu menu-horizontal px-1">
-        <li><a>Link</a></li>
-        <li>
-          <details>
-            <summary>Parent</summary>
-            <ul className="bg-base-100 rounded-t-none p-2">
-              <li><a>Link 1</a></li>
-              <li><a>Link 2</a></li>
-            </ul>
-          </details>
-        </li>
-      </ul>
-    </div>
-  </div>
-  )
-}
+      <div className="flex flex-1 flex-row gap-[1rem] ">
+        <a className="btn btn-ghost text-xl">daisyUI</a>
 
-export default Navbar
+        <div className="class  flex flex-row  gap-[1.5rem] ">
+          <p>Blog</p>
+          <p>Pricing</p>
+        </div>
+      </div>
+
+      <div className="flex items-center gap-[1.5rem] flex-row ">
+        <p>Log in</p>
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <a className="btn btn-ghost bg-purple-600 text-white text-base">
+              start free trial
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
