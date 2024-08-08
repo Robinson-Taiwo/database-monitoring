@@ -6,31 +6,33 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <section className="flex h-[100%] bg-[white] flex-col   flex-col items-center justify-between">
+    <section className="flex w-[100%] h-[100%] bg-[white]   flex-col items-center justify-between">
       <Navbar />
+      <div className="w-[62rem] gap-[2.19rem] flex flex-col justify-center ">
+        <div>
+          <p className="text-[2.75rem]  font-bold  leading-[3.85rem] text-[#121127] ">
+            {" "}
+            Why Every Organization Needs Database Activity Monitoring
+          </p>
+        </div>
 
-      <div className=" text-start  flex justify-center w-[80%] lg:w-[50rem] mt-[4rem]   mb-[1.5rem]  ">
-        <h1 className="text-[2.2rem] text-start  flex justify-center leading-[4rem] w-[100%] font-semibold ">
-          Why Every Organization Needs Database Activity Monitoring
-        </h1>
-      </div>
-
-      <div className="font-sans m-5 lg:w-[43rem] w-[80%] gap-[2.5rem] flex flex-col leading-relaxed">
         <Image
           src={image}
           alt="data-image"
-          className="w-[100%] lg:h-[20rem] xl:h-[30rem]   "
+          width={600}
+          height={345}
+          className="w-[100%]"
         />
 
-        <div className="mb-5">
-          <p className="mb-[0rem">
+        <div className="text-[rgba(18,17,39,0.72)] pb-[2rem] ">
+          <p className="   text-[1.3125rem] font-normal leading-[2.3625rem] ">
             Databases have become more important than ever, thanks to their
             usage for information storage, their ability to power critical
             applications, and their relevance in decision-making. However,
             managing them can be difficult, especially in large organizations
             that work with enormous amounts of data.
           </p>
-          <p className="mb-2">
+          <p className="  text-[1.3125rem] font-normal leading-[2.3625rem]">
             Thus, there is a need to employ database activity monitoring systems
             that provide users with real-time information on the condition of
             their data. In this article, we shall explain why these systems are
@@ -38,35 +40,33 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mb-5">
-          <div className="text-xl font-bold mb-2">
-            The Risks of Unmonitored Database Activity
-          </div>
-          <p className="mb-2">
-            Unmonitored database activity is a recipe for disaster. Without
-            visibility into who's accessing your data, when, and why, you're
-            leaving your business vulnerable to insider threats, cyber-attacks,
-            and data breaches.
-          </p>
-          <p className="mb-2">
-            You are also left in the dark regarding the state of integrations
-            and other tools that are tied to your database such as e-commerce
-            updates, user sign-ups, landing pages, etc. The consequences of the
-            above can be devastating as compromised customer data, intellectual
-            property theft, and reputational damage can take years to recover
-            from.
+        <div className="text-[rgba(18,17,39,0.72)] pb-[2rem] ">
+          <h3 className="text-[rgba(13,12,28,0.72)] text-[1.5rem] font-semibold ">
+            The Risks of Unmonitored Database
+          </h3>
+          <p className=" text-[1.3125rem] font-normal leading-[2.3625rem] ">
+            Activity Unmonitored database activity is a recipe for disaster.
+            Without visibility into who's accessing your data, when, and why,
+            you're leaving your business vulnerable to insider threats,
+            cyber-attacks, and data breaches. You are also left in the dark
+            regarding the state of integrations and other tools that are tied to
+            your database such as e-commerce updates, user sign-ups, landing
+            pages, etc. The consequences of the above can be devastating as
+            compromised customer data, intellectual property theft, and
+            reputational damage can take years to recover from.
           </p>
         </div>
-        <div className="mb-5">
-          <div className="text-xl font-bold mb-2">
+
+        <div className="text-[rgba(18,17,39,0.72)]">
+          <h3 className="text-[rgba(18,17,39,0.72)] font-semibold text-[1.5rem] ">
             The Benefits of Database Activity Monitoring
-          </div>
-          <p className="mb-2">
+          </h3>
+          <p className="   text-[1.3125rem] font-normal leading-[2.3625rem]">
             So, what can database activity monitoring do for your business? For
             starters, it provides a clear view of all database activity,
             allowing you to:
           </p>
-          <ul className="list-disc ml-5 mb-2">
+          <ul className="list-disc ml-6  text-[1.3125rem] font-normal leading-[2.3625rem] ">
             <li className="mb-1">
               Identify suspicious behavior and investigate potential security
               threats
@@ -83,7 +83,7 @@ export default function Home() {
               Reduce the risk of data breaches and cyber attacks
             </li>
           </ul>
-          <p className="mb-2">
+          <p className=" text-[1.3125rem] font-normal leading-[2.3625rem]">
             Take, for example, a financial institution that uses database
             activity monitoring to detect and log user/employee logins. By
             monitoring database activity, they can identify unusual patterns of
@@ -93,11 +93,12 @@ export default function Home() {
             potential data breach or customer loss.
           </p>
         </div>
-        <div className="mb-5">
-          <div className="text-xl font-bold mb-2">
+
+        <div className="text-[rgba(18,17,39,0.72)] pb-[5rem] ">
+          <h3 className="text-[rgba(18,17,39,0.72)] text-[1.5rem] font-semibold ">
             Getting Started with Database Activity Monitoring
-          </div>
-          <p className="mb-2">
+          </h3>
+          <p className=" text-[1.3125rem] font-normal leading-[2.3625rem] ">
             Database activity monitoring is a necessity for businesses that want
             to protect their data and receive regular notifications on their
             database activity. By implementing a robust monitoring solution such
@@ -109,7 +110,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-
       <Footer />
     </section>
   );

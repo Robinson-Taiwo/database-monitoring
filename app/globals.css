@@ -5,3 +5,12 @@
 :root {
   
 }
+
+
+h6{
+    font-family: Poppins;
+font-size: 1.3125rem;
+font-style: normal;
+font-weight: 600;
+line-height: 180%;
+}
